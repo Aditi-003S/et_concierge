@@ -1,11 +1,24 @@
 {
   "name": "et-concierge",
   "version": "1.0.0",
-  "type": "module",
+  "description": "ET AI Concierge chatbot using Node.js, Express and Gemini API",
+  "main": "server.cjs",
+  "scripts": {
+    "start": "node server.cjs"
+  },
+  "keywords": [
+    "chatbot",
+    "gemini",
+    "nodejs",
+    "express",
+    "ai"
+  ],
+  "author": "Aditi",
+  "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^17.3.1",
-    "express": "^4.22.1",
-    "node-fetch": "^3.3.2"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "node-fetch": "^2.7.0"
   }
 }
