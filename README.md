@@ -54,15 +54,9 @@ node server.js
 
 5. Open in browser
 
-http://localhost:3000
+https://et-concierge-rf3w.onrender.com/
 
 
-⚠️ Important
-
-- Do NOT upload your ".env" file
-- Keep your API key secure
-
----
 
 🎯 Future Improvements
 
