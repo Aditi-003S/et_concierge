@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ET AI Concierge</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <div class="brand">
+      <div class="logo-box">ET</div>
+      <div id="brandTitle">ET Concierge</div>
+    </div>
+
+    <div class="nav-actions">
+      <select id="language" class="control">
+        <option value="English">EN</option>
+        <option value="Hindi">हिंदी</option>
+      </select>
+      <button class="control" id="themeBtn">🌙</button>
+      <button class="btn btn-primary" id="getStartedBtn">Get Started</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero container">
+  <h1 id="heroTitle">
+    Your Personal Guide to
+    <span class="highlight">The Economic Times Ecosystem</span>
+  </h1>
+  <p id="heroSubtitle">
+    Discover personalized financial insights, premium content, and exclusive services tailored to your goals.
+  </p>
+
+  <div class="hero-buttons">
+    <button class="btn btn-primary" id="startJourneyBtn">Start Your Journey</button>
+    <button class="btn" id="exploreBtn">Explore Services</button>
+  </div>
+</section>
+
+<section class="container" id="services">
+  <div class="section-title" id="servicesTitle">Explore ET Services</div>
+
+  <div class="cards-grid">
+    <div class="service-card" data-prompt="Tell me about ET Prime and whether it is right for me">
+      <div class="icon">📰</div>
+      <h3>ET Prime</h3>
+      <p id="primeDesc">Premium business journalism and deep market analysis.</p>
+    </div>
+
+    <div class="service-card" data-prompt="Help me use ET Markets for portfolio tracking and market insights">
+      <div class="icon">📈</div>
+      <h3>ET Markets</h3>
+      <p id="marketsDesc">Real-time data and advanced portfolio tracking.</p>
+    </div>
+
+    <div class="service-card" data-prompt="Recommend ET masterclasses for learning investing and finance">
+      <div class="icon">🎓</div>
+      <h3>Masterclasses</h3>
+      <p id="masterDesc">Expert-led courses on finance and investing.</p>
+    </div>
+
+    <div class="service-card" data-prompt="Suggest ET wealth summits or events useful for me">
+      <div class="icon">👥</div>
+      <h3>Wealth Summits</h3>
+      <p id="wealthDesc">Network with industry leaders and experts.</p>
+    </div>
+
+    <div class="service-card" data-prompt="Show me ET corporate events or leadership-focused offerings">
+      <div class="icon">💼</div>
+      <h3>Corporate Events</h3>
+      <p id="corpDesc">Executive networking and thought leadership.</p>
+    </div>
+
+    <div class="service-card" data-prompt="Help me explore ET partner financial services like loans, cards or insurance">
+      <div class="icon">💳</div>
+      <h3>Financial Services</h3>
+      <p id="financeDesc">Credit cards, loans, and wealth management.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="chat-shell" id="chatSection">
+    <div class="chat-top">
+      <div>
+        <div class="chat-title" id="chatTitle">AI Concierge Assistant</div>
+        <div class="persona-pill" id="personaPill">🧠 Detecting your profile</div>
+      </div>
+      <button class="btn" id="resetBtn">Reset Chat</button>
+    </div>
+
+    <div class="chips">
+      <button class="chip quick-chip">Student Investing</button>
+      <button class="chip quick-chip">First Salary Planning</button>
+      <button class="chip quick-chip">Business Growth</button>
+      <button class="chip quick-chip">Buying a House</button>
+    </div>
+
+    <div class="chat-area" id="chatArea"></div>
+
+    <div class="input-bar">
+      <input id="userInput" type="text" placeholder="Ask about ET services, finance, goals, or your next step..." />
+      <button class="btn btn-primary" id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <div class="footer-note">ET AI Concierge Prototype • Multilingual • Dark Mode • Persona-aware</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
