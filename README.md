@@ -66,10 +66,11 @@ http://localhost:3000
 
 🎯 Future Improvements
 
-- Add user authentication
-- Save chat history
-- Deploy online
-- Improve UI/UX
+-Add more language to global support.
+- Add user authentication.
+- Save chat history.
+- Deploy online.
+- Improve UI/UX.
 
 
 👨‍💻 Team :
